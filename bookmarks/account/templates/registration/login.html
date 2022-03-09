@@ -10,7 +10,7 @@
     </p>
   {% else %}
     <p>
-      Fill to login
+      Fill to login, If you don't have account yet, you can create one <a href="{% url "register" %}">here</a>
     </p>
   {% endif %}
   <div class="login-form">
@@ -22,5 +22,6 @@
         <input type="submit" value="Login">
       </p>
     </form>
+    <p><a href="{% url "password_reset" %}">forgot yor password?</a></p>
   </div>
 {% endblock %}
